@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="dist/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        />
+        <title>Astro Motion</title>
+    </head>
+
+    <body>
+        <div class="preloader">
+            <div class="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+        <video autoplay muted loop>
+            <source src="video/gfp-astro-timelapse.mp4" />
+        </video>
+
+        <div class="container-1">
+            <header class="header">
+                <nav class="header-nav">
+                    <a href="#" class="logo">Astro Motion</a>
+                    <button class="burger">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="header-nav-container">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__list-link active" data-id="firstTab">
+                                <a href="#">home</a>
+                                <div class="circle"></div>
+                            </li>
+                            <li class="header-nav__list-link secondTab" data-id="secondTab">
+                                <a href="#">gallery</a>
+                                <div class="circle"></div>
+                            </li>
+                            <li class="header-nav__list-link" data-id="thirdTab">
+                                <a href="#">about</a>
+                                <div class="circle"></div>
+                            </li>
+                            <li class="header-nav__list-link" data-id="fourthTab">
+                                <a href="#">contact</a>
+                                <div class="circle"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main class="main">
+                <ul class="main-tab">
+                    <li class="main-tab-element active" id="firstTab">
+                        <div class="main-tab-element__container">
+                            <div class="main-tab-element__container-content">
+                                <div class="txt">
+                                    <h2>Welcome to Astro Motion</h2>
+                                    <p class="mb-15">
+                                        This HTML template has a motion video
+                                        background loop which is provided by
+                                        <a href="https://getfreepictures.com"
+                                            >Get Free Pictures</a
+                                        >. This is one-page responsive layout
+                                        for your websites. Feel free to use this
+                                        for a commercial purpose.
+                                    </p>
+                                    <p style="margin-bottom: 0px">
+                                        You are not permitted to redistribute
+                                        this template on your Free CSS
+                                        collection websites. Please
+                                        <a
+                                            href="https://templatempo.com/contact"
+                                            >contact us</a
+                                        >
+                                        for more information.
+                                    </p>
+                                </div>
+                                <div class="images">
+                                    <img src="img/home-img-1.jpg" alt="Image" />
+                                    <img src="img/home-img-2.jpg" alt="Image" />
+                                </div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2"></div>
+                                <div class="circle circle-3"></div>
+                                <div class="circle circle-4"></div>
+                            </div>
+                            <div class="btn__center" data-id="secondTab">
+                                <a href="#" class="btn">View Gallery</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-tab-element" id="secondTab">
+                        <div class="main-tab-element__container second">
+                            <div class="main-tab-element__container-content">
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2"></div>
+                                <div class="carousel slide slider">
+                                    <ul class="carousel-indicators slider-dots">
+                                        <li
+                                            class="slider-dots__dot active"
+                                        ></li>
+                                        <li class="slider-dots__dot"></li>
+                                        <li class="slider-dots__dot"></li>
+                                    </ul>
+
+                                    <div class="carousel-inner slider-wrapper">
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-01.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-02.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-03.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-04.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-05.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-06.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-07.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-08.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-09.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-01.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure
+                                                class="slider-content__item card"
+                                            >
+                                                <img
+                                                    src="img/gallery-img-02.jpg"
+                                                    alt="Image"
+                                                />
+                                                <figcaption>
+                                                    <div>
+                                                        <p>
+                                                            Julia dances in the
+                                                            deep dark
+                                                        </p>
+                                                    </div>
+                                                    <a href="#">View More</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-tab-element" id="thirdTab">
+                        <div class="main-tab-element__container th">
+                            <div class="main-tab-element__container-content">
+                                <div class="txt">
+                                    <h2>About our company</h2>
+                                    <p>
+                                        You are <a href="#">allowed</a> to use
+                                        Astro Motion HTML Template for your
+                                        websites. You are not allowed to
+                                        re-distribute this template ZIP file on
+                                        any Free CSS template collection
+                                        website. Illegal redistribution is
+                                        strongly prohibited.
+                                    </p>
+                                    <p class="mb-1" style="margin-bottom: 1rem">
+                                        Praesent auctor rhoncus arcu, vitae
+                                        blandit est vestibulum sit amet. Integer
+                                        erat turpis, vestibulum pellentesque
+                                        aliquam ultricies, finibus nec dui.
+                                        Donec bibendum enim mi, at tristique leo
+                                        feugiat at. Thank you for visiting
+                                        Template Mo.
+                                    </p>
+                                </div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2"></div>
+                                <div class="circle circle-3"></div>
+                                <div class="circle circle-4"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-tab-element" id="fourthTab">
+                        <div class="main-tab-element__container fth">
+                            <h2>Contact Us</h2>
+                            <div class="row">
+                                <div class="col-6">
+                                    <form class="form">
+                                        <input type="text" placeholder="Name" />
+                                        <input
+                                            type="email"
+                                            placeholder="Email"
+                                        />
+                                        <textarea
+                                            rows="5"
+                                            placeholder="Message"
+                                        ></textarea>
+                                        <div class="btn__end">
+                                            <a href="#" class="btn">Send</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-6">
+                                    <p style="margin-bottom: 1.5rem">
+                                        Integer erat turpis, vestibulum
+                                        pellentesque aliquam ultricies, finibus
+                                        nec dui. Donec bibendum enim mi, at
+                                        tristique leo feugiat at.
+                                    </p>
+                                    <div>
+                                        Email:
+                                        <a
+                                            href="mailto:info@company.com"
+                                            class="tm-link-white"
+                                            >info@company.com</a
+                                        >
+                                    </div>
+                                    <div style="margin-bottom: 45px">
+                                        Tel:
+                                        <a
+                                            href="tel:0100200340"
+                                            class="tm-link-white"
+                                            >010-020-0340</a
+                                        >
+                                    </div>
+                                    <div class="map">
+                                        <iframe
+                                            width="100%"
+                                            height="400"
+                                            id="gmap-canvas"
+                                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                            frameborder="0"
+                                            scrolling="no"
+                                            marginheight="0"
+                                            marginwidth="0"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <footer class="footer">
+                <p>
+                    Copyright 2021 Astro Motion Company Limited. All rights
+                    reserved.
+                </p>
+                <p>
+                    Designed by <a href="https://templatemo.com">TemplateMo</a>
+                </p>
+            </footer>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
